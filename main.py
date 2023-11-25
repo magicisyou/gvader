@@ -19,7 +19,7 @@ result_row=ft.Row(
                 ft.CircleAvatar(
                     bgcolor=ft.colors.RED_300,
                     radius=100,
-                    content=ft.Text('0.0',color=ft.colors.BLUE_GREY,size=38),
+                    content=ft.Text('0.0',color=ft.colors.BLUE_GREY,size=38,text_align=ft.TextAlign.CENTER,),
                 ),
                 ft.Text(
                     'Negative Score',
@@ -34,7 +34,7 @@ result_row=ft.Row(
                 ft.CircleAvatar(
                     bgcolor=ft.colors.YELLOW_300,
                     radius=100,
-                    content=ft.Text('0.0',color=ft.colors.BLUE_GREY,size=38),
+                    content=ft.Text('0.0',color=ft.colors.BLUE_GREY,size=38,text_align=ft.TextAlign.CENTER,),
                 ),
                 ft.Text(
                     'Neutral Score',
@@ -49,7 +49,7 @@ result_row=ft.Row(
                 ft.CircleAvatar(
                     bgcolor=ft.colors.GREEN_300,
                     radius=100,
-                    content=ft.Text('0.0',color=ft.colors.BLUE_GREY,size=38),
+                    content=ft.Text('0.0',color=ft.colors.BLUE_GREY,size=38,text_align=ft.TextAlign.CENTER,),
                 ),
                 ft.Text(
                     'Positive Score',
@@ -64,7 +64,7 @@ result_row=ft.Row(
                 ft.CircleAvatar(
                     bgcolor=ft.colors.BLUE_300,
                     radius=100,
-                    content=ft.Text('0.0',color=ft.colors.BLUE_GREY,size=38),
+                    content=ft.Text('0.0',color=ft.colors.BLUE_GREY,size=38,text_align=ft.TextAlign.CENTER,),
                 ),
                 ft.Text(
                     'Compound Score',
@@ -80,8 +80,8 @@ result_row=ft.Row(
 )
 
 textfield=ft.TextField(
-    label='Enter sentence to analyze',
-    hint_text='Enter the sentence or words to analyze and get its score',
+    label='Enter sentence to sentiment analyze',
+    hint_text='Enter the sentence or words to analyze and get its sentiment scores',
     on_submit=lambda _:show_sentiment_scores(textfield.value),
     multiline=True,
     min_lines=3,
