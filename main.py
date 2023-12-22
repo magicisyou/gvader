@@ -1,5 +1,5 @@
 import flet as ft
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # Initialise vader sentiment analysis
 sid = SentimentIntensityAnalyzer()
